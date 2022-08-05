@@ -18,7 +18,6 @@ const NavBar = () => {
     setShow(!show);
   };
   const change = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 80) {
       setShownav(true);
     } else {

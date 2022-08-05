@@ -5,7 +5,7 @@ const FancyButton = forwardRef(({ href, text, onClick }, ref) => (
     ref={ref}
     href={href}
     onClick={onClick}
-    className="mt-2 px-3 text-xl font-semibold text-white"
+    className="mt-2 px-3 text-xl font-semibold text-white flex"
   >
     {text}
   </a>
