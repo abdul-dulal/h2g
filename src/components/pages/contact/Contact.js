@@ -24,27 +24,27 @@ const Contact = () => {
           consectetur tempora jet.
         </p>
       </div>
-      <div className="container lg:flex gap-10 space-y-5 lg:space-y-0">
+      <div className="container  lg:flex gap-10 space-y-5 lg:space-y-0">
         <input
           type="text"
           placeholder="Enter Your Name"
-          className="py-3 w-[350px]"
+          className="py-3 w-[350px] px-4"
         />
         <input
           type="text"
           placeholder="Enter Your Email"
-          className="py-3 w-[350px]"
+          className="py-3 w-[350px] px-4"
         />
         <input
           type="text"
           placeholder="Enter Your Subject"
-          className="py-3 w-[350px]"
+          className="py-3 w-[350px] px-4"
         />
       </div>
-      <div className="container mt-8">
+      <div className="container mt-8  pb-5 ">
         <textarea
           placeholder="Enter Your Message"
-          className=" lg:w-full w-[350px] py-7"
+          className=" lg:w-full w-[350px] py-7 px-4"
         ></textarea>
       </div>
     </div>

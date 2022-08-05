@@ -4,7 +4,7 @@
 
 @layer components {
   .container {
-    @apply lg:px-48 md:px-10 px-5;
+    @apply lg:px-48 md:px-10  px-5;
   }
 }
 @layer base {

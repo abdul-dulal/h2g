@@ -1,0 +1,17 @@
+.parent {
+  position: relative;
+}
+
+.hello {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 0.3s;
+}
+.hello:hover {
+  opacity: 1;
+}

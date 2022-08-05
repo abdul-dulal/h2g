@@ -1,0 +1,32 @@
+.parent {
+  position: relative;
+}
+
+.hello {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 180px;
+  width: 255px;
+  margin: 17px;
+  background-color: rgba(21, 19, 19, 0.4);
+  opacity: 0;
+  transition: 1s;
+}
+@media screen and(min-width:768px) and (max-width: 1024px) {
+  .hello {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 400px;
+    margin: 17px;
+    background-color: rgba(21, 19, 19, 0.4);
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+.hello:hover {
+  opacity: 1;
+}

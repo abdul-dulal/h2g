@@ -6,7 +6,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import CountUp from "react-countup";
 const Company = () => {
   return (
-    <div className=" bg-primary lg:h-[450px] md:h-[450px] ">
+    <div className=" bg-primary lg:h-[450px] md:h-[450px] md:mt-[600px] lg:mt-0 mt-14 ">
       <div className="text-center text-white lg:pt-24 pt-14">
         <h2 className=" text-2xl">COMPANY STATISTICS</h2>
         <p>

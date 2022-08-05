@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { createRef, useState } from "react";
 import { MdCall } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import { BiRegistered } from "react-icons/bi";
 import { FiLogIn } from "react-icons/fi";
 import logo from "../../images/logo.png";
-import ScrollspyNav from "react-scrollspy-nav";
 import Slider from "./Slider";
 import SubNav from "./SubNav";
+
+import FancyButton from "../FancyButton";
+
+import "./global.css";
+import ScrollSpy from "react-scrollspy-navigation/dist/ScrollSpy";
 const NavBar = () => {
   const [show, setShow] = useState(false);
   const [showNav, setShownav] = useState(false);
@@ -22,7 +26,6 @@ const NavBar = () => {
     }
   };
   window.addEventListener("scroll", change);
-  let active = "text-red underline";
 
   return (
     <>
@@ -59,52 +62,26 @@ const NavBar = () => {
           <div className="">
             <img src={logo} alt="" />
           </div>
-          <div>
-            <ScrollspyNav
-              scrollTargetIds={[
-                "home",
-                "about",
-                "team",
-                "portfolio",
-                "plan",
-                "blog",
-                "contact",
-              ]}
-              offset={100}
-              activeNavClass={{ active }}
-              scrollDuration="1000"
-              headerBackground="true"
-            >
-              <ul
-                className={`flex gap-7 text-[18px] text-white font-bold mt-2 `}
-              >
-                <li>
-                  <a href="#home">Home</a>
-                </li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-                <li>
-                  <a href="#team">Our Team</a>
-                </li>
-                <li>
-                  <a href="#work">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#plan">Plan &amp; Pricing</a>
-                </li>
-                <li>
-                  <a href="#blog">Blog</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </ScrollspyNav>
+
+          <div className="flex justify-center items-center">
+            <ScrollSpy>
+              <FancyButton href="#home" text="Home" ref={createRef()} />
+              <FancyButton href="#about" text="About" ref={createRef()} />
+              <FancyButton href="#team" text="Our Team" ref={createRef()} />
+              <FancyButton href="#work" text="Portfolio" ref={createRef()} />
+              <FancyButton
+                href="#plan"
+                text="Plan &amp; Price"
+                ref={createRef()}
+              />
+              <FancyButton href="#blog" text="Blog" ref={createRef()} />
+              <FancyButton href="#contact" text="Contact" ref={createRef()} />
+            </ScrollSpy>
           </div>
         </div>
       </nav>
       <SubNav show={show} hide={hide} showNav={showNav} />
+
       <Slider />
     </>
   );

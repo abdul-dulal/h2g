@@ -16,7 +16,7 @@ import Progressbar from "./Progressbar";
 import ProgressBar from "@ramonak/react-progress-bar";
 const Identity = () => {
   return (
-    <div className="lg:h-screen container py-12 mt-14">
+    <div className="lg:h-screen md:h-screen container py-12 mt-14">
       <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-10 mt-4 ">
         <div className="">
           <h1 className="text-center">WHO WE ARE?</h1>

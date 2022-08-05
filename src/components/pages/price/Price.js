@@ -59,23 +59,25 @@ const Price = () => {
             </button>
           </div>
         </div>
-        <div className="]">
-          <div className="bg-secondary text-2xl flex items-center justify-center h-20">
-            <h2 className="uppercase text-center text-white">Advanced</h2>
-          </div>
-          <div className="text-center bg-white space-y-5 h-[400px] ">
-            <h2 className="text-3xl font-bold text-primary pt-5">$15 </h2>
-            <span className="text-secondary text-[16px]">Per Month</span>
-            <ul className="space-y-3 text-secondary">
-              <li>24 Hour Support</li>
-              <li>10 Database</li>
-              <li>50 GB Data Alloance</li>
-              <li>5 Domain Name Changes </li>
-              <li>Up to 10 Users</li>
-            </ul>
-            <button className=" uppercase  bg-primary px-7 py-3 rounded font-bold text-white hover:skew-x-12 hover:skew-y-2 ">
-              Signup Now
-            </button>
+        <div className="">
+          <div>
+            <div className="bg-secondary text-2xl flex items-center justify-center h-20">
+              <h2 className="uppercase text-center text-white">Advanced</h2>
+            </div>
+            <div className="text-center bg-white space-y-5 h-[400px] ">
+              <h2 className="text-3xl font-bold text-primary pt-5">$15 </h2>
+              <span className="text-secondary text-[16px]">Per Month</span>
+              <ul className="space-y-3 text-secondary">
+                <li>24 Hour Support</li>
+                <li>10 Database</li>
+                <li>50 GB Data Alloance</li>
+                <li>5 Domain Name Changes </li>
+                <li>Up to 10 Users</li>
+              </ul>
+              <button className=" uppercase  bg-primary px-7 py-3 rounded font-bold text-white hover:skew-x-12 hover:skew-y-2 ">
+                Signup Now
+              </button>
+            </div>
           </div>
         </div>
       </div>

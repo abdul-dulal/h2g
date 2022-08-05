@@ -11,7 +11,6 @@ const About = () => {
     <>
       <div
         id="about"
-        style={{ height: "500px" }}
         className=" flex items-center justify-center lg:h-screen md:h-screen bg-[#f6f6f6] py-12 md:mt-24  lg:mt-0"
       >
         <div>

@@ -11,7 +11,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { BsGoogle } from "react-icons/bs";
 const Team = () => {
   return (
-    <div id="team" className="container lg:h-screen md:h-screen">
+    <div
+      id="team"
+      className="container lg:h-screen md:h-screen lg:mt-0 mt-0 md:mt-24"
+    >
       <div className="text-center space-y-4">
         <p className=" space-x-1 text-xl text-gray-400 ">
           <span className="text-primary">[</span> Meet Our Team

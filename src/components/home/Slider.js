@@ -1,16 +1,15 @@
 import React from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-
 import banner from "../../images/banner/1.jpg";
 import Button from "../shere/Button";
+import { HiOutlineChevronDown } from "react-icons/hi";
+import ScrollspyNav from "react-scrollspy-nav";
 const Slider = () => {
   return (
     <div
@@ -20,7 +19,6 @@ const Slider = () => {
       <Swiper
         modules={[Navigation, Pagination, A11y]}
         navigation={{ clickable: true }}
-        spaceBetween={50}
         slidesPerView={1}
         loop={true}
         onSwiper={(swiper) => console.log()}
@@ -90,6 +88,19 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      <div className="bg-secondary h-14 flex justify-center  items-center">
+        <ScrollspyNav
+          scrollTargetIds={["about"]}
+          offset={100}
+          activeNavClass=""
+          scrollDuration="1000"
+          headerBackground="true"
+        >
+          <a href="#about">
+            <HiOutlineChevronDown className="text-4xl text-white border-2 rounded-full p-1" />
+          </a>
+        </ScrollspyNav>
+      </div>
     </div>
   );
 };
